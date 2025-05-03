@@ -33,7 +33,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Streamlit page header
-st.header("AJAY CHAT PROMPT")
+st.header("AJAY CHATBOT")
 
 # Configure Gemini API
 genai.configure(api_key="AIzaSyCbNcbjk9_wbsKwSuwNQflPNi6SquD2CDM")
@@ -56,7 +56,7 @@ if prompt:
                 response = model.generate_content(prompt)
                 # Store question and answer
                 st.session_state.history.append(("You", prompt))
-                st.session_state.history.append(("Gemini", response.text))
+                st.session_state.history.append(("Ajay", response.text))
             except Exception as e:
                 st.error(f"Error: {e}")
 
