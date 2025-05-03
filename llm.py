@@ -33,7 +33,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Streamlit page header
-st.header("CHAT PROMPT")
+st.header("AJAY CHAT PROMPT")
 
 # Configure Gemini API
 genai.configure(api_key="AIzaSyCbNcbjk9_wbsKwSuwNQflPNi6SquD2CDM")
